@@ -1,0 +1,50 @@
+body{
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    height: auto;
+    width: 50%;
+    margin: 250px auto;
+    border-radius: 15px;
+    padding: 30px;
+    animation-name: container;
+    animation-delay: 1s;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    animation-name: ball;
+    animation-delay: 1s;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes ball{
+    0% {background-color: #fff;}
+    15% {background-color: purple}
+    30% {background-color: indigo;}
+    45% {background-color: #333; left: 670px}
+    60% {background-color: indigo;}
+    75% {background-color: purple;}
+    100% {background-color: #fff;} 
+}
+@keyframes container{
+    0% {background-color: #333; transform:  rotateY(0deg);}
+    15% {background-color: indigo;}
+    30% {background-color: purple}
+    45% {background-color: #fff; transform:  rotateY(180deg);}
+    60% {background-color: purple;}
+    75% {background-color: indigo;}
+    100% { background-color: #333; transform:  rotateY(360deg);}
+}
